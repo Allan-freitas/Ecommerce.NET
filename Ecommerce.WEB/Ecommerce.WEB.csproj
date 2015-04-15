@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B8C9807E-36BF-4873-A0CA-DB7A95A38989}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ecommerce.WEB</RootNamespace>
+    <AssemblyName>Ecommerce.WEB</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\packages\AjaxControlToolkit.4.1.60919\lib\40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Ext.Net">
+      <HintPath>..\packages\Ext.NET.2.1.1\lib\net40\Ext.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Ext.Net.Utilities">
+      <HintPath>..\packages\Ext.NET.Utilities.2.1.0\lib\Ext.Net.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\packages\AjaxControlToolkit.4.1.60919\lib\40\SanitizerProviders\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SanitizerProviders">
+      <HintPath>..\packages\AjaxControlToolkit.4.1.60919\lib\40\SanitizerProviders\SanitizerProviders.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Transformer.NET">
+      <HintPath>..\packages\Transformer.NET.2.1.1\lib\net35\Transformer.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="UOL.PagSeguro, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\Produtos.aspx" />
+    <Content Include="AlterarDetalhes.aspx" />
+    <Content Include="App_Readme\Ext.NET.Utilities.LICENSE.txt" />
+    <Content Include="App_Readme\Ext.NET.Utilities.README.txt" />
+    <Content Include="App_Readme\Ext.NET\BREAKING_CHANGES.txt" />
+    <Content Include="App_Readme\Ext.NET\CHANGELOG.txt" />
+    <Content Include="App_Readme\Ext.NET\LICENSE.txt" />
+    <Content Include="App_Readme\Ext.NET\README.txt" />
+    <Content Include="App_Readme\Transformer.NET\LICENSE.txt" />
+    <Content Include="App_Readme\Transformer.NET\README.txt" />
+    <Content Include="Autenticar.aspx" />
+    <Content Include="Cadastrar.aspx" />
+    <Content Include="CarrinhoCompra.aspx" />
+    <Content Include="Contato.aspx" />
+    <Content Include="css\demos.css" />
+    <Content Include="css\iecss.css" />
+    <Content Include="css\lightbox.css" />
+    <Content Include="css\style.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Detalhes.aspx" />
+    <Content Include="Ext.NET.Default.aspx" />
+    <Content Include="images\120x53-pagar-roxo.gif" />
+    <Content Include="images\add-user.png" />
+    <Content Include="images\addtocart.gif" />
+    <Content Include="images\bann1.jpg" />
+    <Content Include="images\bann2.jpg" />
+    <Content Include="images\banner1.jpg" />
+    <Content Include="images\banner2.jpg" />
+    <Content Include="images\bar_bg.gif" />
+    <Content Include="images\bg-thead.png" />
+    <Content Include="images\bg.jpg" />
+    <Content Include="images\big_pic.jpg" />
+    <Content Include="images\blue-add.png" />
+    <Content Include="images\bullet.gif" />
+    <Content Include="images\cadastrar.gif" />
+    <Content Include="images\camera.png" />
+    <Content Include="images\car.png" />
+    <Content Include="images\cart.gif" />
+    <Content Include="images\cart_bg.gif" />
+    <Content Include="images\checked.png" />
+    <Content Include="images\close.png" />
+    <Content Include="images\column-asc.png" />
+    <Content Include="images\column-desc.png" />
+    <Content Include="images\column-sortable.png" />
+    <Content Include="images\compare.gif" />
+    <Content Include="images\contact-new.png" />
+    <Content Include="images\contact_bt.gif" />
+    <Content Include="images\csscreme.jpg" />
+    <Content Include="images\de.gif" />
+    <Content Include="images\delete.png" />
+    <Content Include="images\details_box_bottom.gif" />
+    <Content Include="images\details_box_center.gif" />
+    <Content Include="images\details_box_top.gif" />
+    <Content Include="images\details_bt_bg.gif" />
+    <Content Include="images\details_bt_bg.png" />
+    <Content Include="images\edit.png" />
+    <Content Include="images\en.gif" />
+    <Content Include="images\favorites.gif" />
+    <Content Include="images\favorites.png" />
+    <Content Include="images\favs.gif" />
+    <Content Include="images\favs.png" />
+    <Content Include="images\footer_bg.gif" />
+    <Content Include="images\gnome-logout.png" />
+    <Content Include="images\header_bg.jpg" />
+    <Content Include="images\header_divider.png" />
+    <Content Include="images\home.png" />
+    <Content Include="images\iphone.png" />
+    <Content Include="images\laptop.gif" />
+    <Content Include="images\laptop.png" />
+    <Content Include="images\loading.gif" />
+    <Content Include="images\menu_bg.gif" />
+    <Content Include="images\menu_divider.gif" />
+    <Content Include="images\menu_left.gif" />
+    <Content Include="images\menu_right.gif" />
+    <Content Include="images\menu_title_bg.gif" />
+    <Content Include="images\navbullet.png" />
+    <Content Include="images\next.png" />
+    <Content Include="images\p1.gif" />
+    <Content Include="images\p2.gif" />
+    <Content Include="images\p4.gif" />
+    <Content Include="images\p5.gif" />
+    <Content Include="images\pag_bg.gif" />
+    <Content Include="images\pag_bg.png" />
+    <Content Include="images\pag_bg_a.gif" />
+    <Content Include="images\pag_bg_a.png" />
+    <Content Include="images\payment.gif" />
+    <Content Include="images\prev.png" />
+    <Content Include="images\products_details_bg.gif" />
+    <Content Include="images\product_box_bottom.gif" />
+    <Content Include="images\product_box_center.gif" />
+    <Content Include="images\product_box_top.gif" />
+    <Content Include="images\search.gif" />
+    <Content Include="images\services.png" />
+    <Content Include="images\shoppingcart.png" />
+    <Content Include="images\square-blue-add.gif" />
+    <Content Include="images\thumb1.gif" />
+    <Content Include="images\thumb2.gif" />
+    <Content Include="images\top_search_bg.gif" />
+    <Content Include="images\user_add.png" />
+    <Content Include="js\boxOver.js" />
+    <Content Include="js\jquery-1.9.0.js" />
+    <Content Include="js\jquery-1.9.0.min.js" />
+    <Content Include="js\jquery.ui.autocomplete.js" />
+    <Content Include="js\jquery.ui.core.js" />
+    <Content Include="js\jquery.ui.menu.js" />
+    <Content Include="js\jquery.ui.position.js" />
+    <Content Include="js\jquery.ui.widget.js" />
+    <Content Include="js\lightbox.js" />
+    <Content Include="js\modernizr-1.7.min.js" />
+    <Content Include="Logout.aspx" />
+    <Content Include="Produtos.aspx" />
+    <Content Include="RecuperaSenha.aspx" />
+    <Content Include="ResultadoPesquisa.aspx" />
+    <Content Include="Teste.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\Produtos.aspx.cs">
+      <DependentUpon>Produtos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Produtos.aspx.designer.cs">
+      <DependentUpon>Produtos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AlterarDetalhes.aspx.cs">
+      <DependentUpon>AlterarDetalhes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AlterarDetalhes.aspx.designer.cs">
+      <DependentUpon>AlterarDetalhes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Autenticar.aspx.cs">
+      <DependentUpon>Autenticar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Autenticar.aspx.designer.cs">
+      <DependentUpon>Autenticar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastrar.aspx.cs">
+      <DependentUpon>Cadastrar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cadastrar.aspx.designer.cs">
+      <DependentUpon>Cadastrar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CarrinhoCompra.aspx.cs">
+      <DependentUpon>CarrinhoCompra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CarrinhoCompra.aspx.designer.cs">
+      <DependentUpon>CarrinhoCompra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contato.aspx.cs">
+      <DependentUpon>Contato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contato.aspx.designer.cs">
+      <DependentUpon>Contato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Detalhes.aspx.cs">
+      <DependentUpon>Detalhes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Detalhes.aspx.designer.cs">
+      <DependentUpon>Detalhes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Layout.Master.cs">
+      <DependentUpon>Layout.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout.Master.designer.cs">
+      <DependentUpon>Layout.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Produtos.aspx.cs">
+      <DependentUpon>Produtos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Produtos.aspx.designer.cs">
+      <DependentUpon>Produtos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecuperaSenha.aspx.cs">
+      <DependentUpon>RecuperaSenha.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RecuperaSenha.aspx.designer.cs">
+      <DependentUpon>RecuperaSenha.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ResultadoPesquisa.aspx.cs">
+      <DependentUpon>ResultadoPesquisa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ResultadoPesquisa.aspx.designer.cs">
+      <DependentUpon>ResultadoPesquisa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Teste.aspx.cs">
+      <DependentUpon>Teste.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Teste.aspx.designer.cs">
+      <DependentUpon>Teste.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ecommerce.BLL\Ecommerce.BLL.csproj">
+      <Project>{E478D95B-7C3E-4012-8C90-EE61E4A7AB44}</Project>
+      <Name>Ecommerce.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ecommerce.DAO\Ecommerce.DAO.csproj">
+      <Project>{FC46F2B2-D0EB-41C1-9D39-CC175A322988}</Project>
+      <Name>Ecommerce.DAO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Layout.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Admin\Produtos\" />
+    <Folder Include="Produtos\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4168</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

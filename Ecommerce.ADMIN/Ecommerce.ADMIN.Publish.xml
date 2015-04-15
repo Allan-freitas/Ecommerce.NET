@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="\\FILE-PC\Users\Public\Powernin" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Web.config" publishTime="11/17/2012 19:58:00" />
+    <file relUrl="ListarVendas.aspx" publishTime="12/04/2012 21:39:40" />
+    <file relUrl="ListarItensVenda.aspx" publishTime="12/04/2012 21:49:30" />
+    <file relUrl="Fabricante.aspx" publishTime="11/16/2012 20:14:59" />
+    <file relUrl="bin/Ecommerce.ADMIN.pdb" publishTime="12/09/2012 18:19:13" />
+    <file relUrl="Produtos.aspx" publishTime="11/29/2012 20:55:45" />
+    <file relUrl="bin/Ecommerce.ADMIN.dll" publishTime="12/09/2012 18:19:13" />
+    <file relUrl="bin/Ecommerce.DAO.dll" publishTime="12/08/2012 20:31:40" />
+    <file relUrl="Clientes.aspx" publishTime="11/16/2012 23:29:46" />
+    <file relUrl="bin/Ecommerce.BLL.dll" publishTime="12/09/2012 18:19:12" />
+    <file relUrl="bin/Ecommerce.DAO.pdb" publishTime="12/08/2012 20:31:40" />
+    <file relUrl="bin/Ecommerce.BLL.pdb" publishTime="12/09/2012 18:19:12" />
+    <file relUrl="Categoria.aspx" publishTime="11/15/2012 23:32:16" />
+  </publishProfile>
+</publishData>

@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LOJAModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="LOJAModelStoreContainer">
+    <EntitySet Name="BANNER" EntityType="LOJAModel.Store.BANNER" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CATEGORIA" EntityType="LOJAModel.Store.CATEGORIA" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="CLIENTE" EntityType="LOJAModel.Store.CLIENTE" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="COMENTARIO" EntityType="LOJAModel.Store.COMENTARIO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="FABRICANTE" EntityType="LOJAModel.Store.FABRICANTE" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ITEM_VENDA" EntityType="LOJAModel.Store.ITEM_VENDA" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PRODUTO" EntityType="LOJAModel.Store.PRODUTO" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TIPO_VENDA" EntityType="LOJAModel.Store.TIPO_VENDA" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="VENDA" EntityType="LOJAModel.Store.VENDA" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_COMENTARIO_PRODUTO" Association="LOJAModel.Store.FK_COMENTARIO_PRODUTO">
+      <End Role="PRODUTO" EntitySet="PRODUTO" />
+      <End Role="COMENTARIO" EntitySet="COMENTARIO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ITEM_VENDA_PRODUTO" Association="LOJAModel.Store.FK_ITEM_VENDA_PRODUTO">
+      <End Role="PRODUTO" EntitySet="PRODUTO" />
+      <End Role="ITEM_VENDA" EntitySet="ITEM_VENDA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ITEM_VENDA_VENDA" Association="LOJAModel.Store.FK_ITEM_VENDA_VENDA">
+      <End Role="VENDA" EntitySet="VENDA" />
+      <End Role="ITEM_VENDA" EntitySet="ITEM_VENDA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PRODUTO_CATEGORIA" Association="LOJAModel.Store.FK_PRODUTO_CATEGORIA">
+      <End Role="CATEGORIA" EntitySet="CATEGORIA" />
+      <End Role="PRODUTO" EntitySet="PRODUTO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PRODUTO_FABRICANTE" Association="LOJAModel.Store.FK_PRODUTO_FABRICANTE">
+      <End Role="FABRICANTE" EntitySet="FABRICANTE" />
+      <End Role="PRODUTO" EntitySet="PRODUTO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VENDA_CLIENTE" Association="LOJAModel.Store.FK_VENDA_CLIENTE">
+      <End Role="CLIENTE" EntitySet="CLIENTE" />
+      <End Role="VENDA" EntitySet="VENDA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VENDA_TIPO_VENDA" Association="LOJAModel.Store.FK_VENDA_TIPO_VENDA">
+      <End Role="TIPO_VENDA" EntitySet="TIPO_VENDA" />
+      <End Role="VENDA" EntitySet="VENDA" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="BANNER">
+    <Key>
+      <PropertyRef Name="IDT_BANNER" />
+    </Key>
+    <Property Name="IDT_BANNER" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DESCRICAO" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="IMAGEM" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="PRIORIDADE" Type="nchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="CATEGORIA">
+    <Key>
+      <PropertyRef Name="IDT_CATEGORIA" />
+    </Key>
+    <Property Name="IDT_CATEGORIA" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NOME" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="CLIENTE">
+    <Key>
+      <PropertyRef Name="IDT_CLIENTE" />
+    </Key>
+    <Property Name="IDT_CLIENTE" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NOME" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="EMAIL" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="SENHA" Type="char" Nullable="false" MaxLength="10" />
+    <Property Name="DATA_CADASTRO" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="COMENTARIO">
+    <Key>
+      <PropertyRef Name="IDT_COMENTARIO" />
+    </Key>
+    <Property Name="IDT_COMENTARIO" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NOME" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="EMAIL" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="DESCRICAO" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="IDT_PRODUTO" Type="int" Nullable="false" />
+    <Property Name="NOTA" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FABRICANTE">
+    <Key>
+      <PropertyRef Name="IDT_FABRICANTE" />
+    </Key>
+    <Property Name="IDT_FABRICANTE" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NOME" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ITEM_VENDA">
+    <Key>
+      <PropertyRef Name="IDT_VENDA" />
+      <PropertyRef Name="IDT_PRODUTO" />
+    </Key>
+    <Property Name="IDT_VENDA" Type="int" Nullable="false" />
+    <Property Name="IDT_PRODUTO" Type="int" Nullable="false" />
+    <Property Name="QUANTIDADE" Type="int" Nullable="false" />
+    <Property Name="VALOR_UNITARIO" Type="decimal" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PRODUTO">
+    <Key>
+      <PropertyRef Name="IDT_PRODUTO" />
+    </Key>
+    <Property Name="IDT_PRODUTO" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IDT_CATEGORIA" Type="int" Nullable="false" />
+    <Property Name="IDT_FABRICANTE" Type="int" Nullable="false" />
+    <Property Name="NOME" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="DESCRICAO" Type="varchar" Nullable="false" MaxLength="300" />
+    <Property Name="VALOR" Type="decimal" Nullable="false" />
+    <Property Name="DATA_CADASTRO" Type="datetime" Nullable="false" />
+    <Property Name="FOTO" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="DESTAQUE" Type="char" Nullable="false" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="TIPO_VENDA">
+    <Key>
+      <PropertyRef Name="IDT_TIPO_VENDA" />
+    </Key>
+    <Property Name="IDT_TIPO_VENDA" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DESCRICAO" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="VENDA">
+    <Key>
+      <PropertyRef Name="IDT_VENDA" />
+    </Key>
+    <Property Name="IDT_VENDA" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="IDT_CLIENTE" Type="int" Nullable="false" />
+    <Property Name="IDT_TIPO_VENDA" Type="int" Nullable="false" />
+    <Property Name="DATA_CADASTRO" Type="datetime" Nullable="false" />
+    <Property Name="VALOR_TOTAL" Type="decimal" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_COMENTARIO_PRODUTO">
+    <End Role="PRODUTO" Type="LOJAModel.Store.PRODUTO" Multiplicity="1" />
+    <End Role="COMENTARIO" Type="LOJAModel.Store.COMENTARIO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRODUTO">
+        <PropertyRef Name="IDT_PRODUTO" />
+      </Principal>
+      <Dependent Role="COMENTARIO">
+        <PropertyRef Name="IDT_PRODUTO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ITEM_VENDA_PRODUTO">
+    <End Role="PRODUTO" Type="LOJAModel.Store.PRODUTO" Multiplicity="1" />
+    <End Role="ITEM_VENDA" Type="LOJAModel.Store.ITEM_VENDA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PRODUTO">
+        <PropertyRef Name="IDT_PRODUTO" />
+      </Principal>
+      <Dependent Role="ITEM_VENDA">
+        <PropertyRef Name="IDT_PRODUTO" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ITEM_VENDA_VENDA">
+    <End Role="VENDA" Type="LOJAModel.Store.VENDA" Multiplicity="1" />
+    <End Role="ITEM_VENDA" Type="LOJAModel.Store.ITEM_VENDA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VENDA">
+        <PropertyRef Name="IDT_VENDA" />
+      </Principal>
+      <Dependent Role="ITEM_VENDA">
+        <PropertyRef Name="IDT_VENDA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PRODUTO_CATEGORIA">
+    <End Role="CATEGORIA" Type="LOJAModel.Store.CATEGORIA" Multiplicity="1" />
+    <End Role="PRODUTO" Type="LOJAModel.Store.PRODUTO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CATEGORIA">
+        <PropertyRef Name="IDT_CATEGORIA" />
+      </Principal>
+      <Dependent Role="PRODUTO">
+        <PropertyRef Name="IDT_CATEGORIA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PRODUTO_FABRICANTE">
+    <End Role="FABRICANTE" Type="LOJAModel.Store.FABRICANTE" Multiplicity="1" />
+    <End Role="PRODUTO" Type="LOJAModel.Store.PRODUTO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="FABRICANTE">
+        <PropertyRef Name="IDT_FABRICANTE" />
+      </Principal>
+      <Dependent Role="PRODUTO">
+        <PropertyRef Name="IDT_FABRICANTE" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VENDA_CLIENTE">
+    <End Role="CLIENTE" Type="LOJAModel.Store.CLIENTE" Multiplicity="1" />
+    <End Role="VENDA" Type="LOJAModel.Store.VENDA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CLIENTE">
+        <PropertyRef Name="IDT_CLIENTE" />
+      </Principal>
+      <Dependent Role="VENDA">
+        <PropertyRef Name="IDT_CLIENTE" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VENDA_TIPO_VENDA">
+    <End Role="TIPO_VENDA" Type="LOJAModel.Store.TIPO_VENDA" Multiplicity="1" />
+    <End Role="VENDA" Type="LOJAModel.Store.VENDA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TIPO_VENDA">
+        <PropertyRef Name="IDT_TIPO_VENDA" />
+      </Principal>
+      <Dependent Role="VENDA">
+        <PropertyRef Name="IDT_TIPO_VENDA" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

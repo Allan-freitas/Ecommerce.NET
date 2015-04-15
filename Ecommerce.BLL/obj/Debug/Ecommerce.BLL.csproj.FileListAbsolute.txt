@@ -1,0 +1,7 @@
+C:\Dropbox\Projetos\Projetos\DOT.NET\Ecommerce\Ecommerce\Ecommerce.BLL\bin\Debug\Ecommerce.BLL.dll
+C:\Dropbox\Projetos\Projetos\DOT.NET\Ecommerce\Ecommerce\Ecommerce.BLL\bin\Debug\Ecommerce.BLL.pdb
+C:\Dropbox\Projetos\Projetos\DOT.NET\Ecommerce\Ecommerce\Ecommerce.BLL\bin\Debug\Ecommerce.DAO.dll
+C:\Dropbox\Projetos\Projetos\DOT.NET\Ecommerce\Ecommerce\Ecommerce.BLL\bin\Debug\Ecommerce.DAO.pdb
+C:\Dropbox\Projetos\Projetos\DOT.NET\Ecommerce\Ecommerce\Ecommerce.BLL\obj\Debug\ResolveAssemblyReference.cache
+C:\Dropbox\Projetos\Projetos\DOT.NET\Ecommerce\Ecommerce\Ecommerce.BLL\obj\Debug\Ecommerce.BLL.dll
+C:\Dropbox\Projetos\Projetos\DOT.NET\Ecommerce\Ecommerce\Ecommerce.BLL\obj\Debug\Ecommerce.BLL.pdb

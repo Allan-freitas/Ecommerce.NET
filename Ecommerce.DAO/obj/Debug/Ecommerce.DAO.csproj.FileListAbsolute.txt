@@ -1,0 +1,6 @@
+C:\Dropbox\Projetos\Projetos\DOT.NET\Ecommerce\Ecommerce\Ecommerce.DAO\bin\Debug\Ecommerce.DAO.dll.config
+C:\Dropbox\Projetos\Projetos\DOT.NET\Ecommerce\Ecommerce\Ecommerce.DAO\bin\Debug\Ecommerce.DAO.dll
+C:\Dropbox\Projetos\Projetos\DOT.NET\Ecommerce\Ecommerce\Ecommerce.DAO\bin\Debug\Ecommerce.DAO.pdb
+C:\Dropbox\Projetos\Projetos\DOT.NET\Ecommerce\Ecommerce\Ecommerce.DAO\obj\Debug\ResolveAssemblyReference.cache
+C:\Dropbox\Projetos\Projetos\DOT.NET\Ecommerce\Ecommerce\Ecommerce.DAO\obj\Debug\Ecommerce.DAO.dll
+C:\Dropbox\Projetos\Projetos\DOT.NET\Ecommerce\Ecommerce\Ecommerce.DAO\obj\Debug\Ecommerce.DAO.pdb

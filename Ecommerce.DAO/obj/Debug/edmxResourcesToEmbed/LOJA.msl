@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LOJAModelStoreContainer" CdmEntityContainer="LOJAEntities">
+    <EntitySetMapping Name="BANNER">
+      <EntityTypeMapping TypeName="LOJAModel.BANNER">
+        <MappingFragment StoreEntitySet="BANNER">
+          <ScalarProperty Name="IDT_BANNER" ColumnName="IDT_BANNER" />
+          <ScalarProperty Name="DESCRICAO" ColumnName="DESCRICAO" />
+          <ScalarProperty Name="IMAGEM" ColumnName="IMAGEM" />
+          <ScalarProperty Name="PRIORIDADE" ColumnName="PRIORIDADE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CATEGORIA">
+      <EntityTypeMapping TypeName="LOJAModel.CATEGORIA">
+        <MappingFragment StoreEntitySet="CATEGORIA">
+          <ScalarProperty Name="IDT_CATEGORIA" ColumnName="IDT_CATEGORIA" />
+          <ScalarProperty Name="NOME" ColumnName="NOME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CLIENTE">
+      <EntityTypeMapping TypeName="LOJAModel.CLIENTE">
+        <MappingFragment StoreEntitySet="CLIENTE">
+          <ScalarProperty Name="IDT_CLIENTE" ColumnName="IDT_CLIENTE" />
+          <ScalarProperty Name="NOME" ColumnName="NOME" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="SENHA" ColumnName="SENHA" />
+          <ScalarProperty Name="DATA_CADASTRO" ColumnName="DATA_CADASTRO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="COMENTARIO">
+      <EntityTypeMapping TypeName="LOJAModel.COMENTARIO">
+        <MappingFragment StoreEntitySet="COMENTARIO">
+          <ScalarProperty Name="IDT_COMENTARIO" ColumnName="IDT_COMENTARIO" />
+          <ScalarProperty Name="NOME" ColumnName="NOME" />
+          <ScalarProperty Name="EMAIL" ColumnName="EMAIL" />
+          <ScalarProperty Name="DESCRICAO" ColumnName="DESCRICAO" />
+          <ScalarProperty Name="IDT_PRODUTO" ColumnName="IDT_PRODUTO" />
+          <ScalarProperty Name="NOTA" ColumnName="NOTA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FABRICANTE">
+      <EntityTypeMapping TypeName="LOJAModel.FABRICANTE">
+        <MappingFragment StoreEntitySet="FABRICANTE">
+          <ScalarProperty Name="IDT_FABRICANTE" ColumnName="IDT_FABRICANTE" />
+          <ScalarProperty Name="NOME" ColumnName="NOME" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ITEM_VENDA">
+      <EntityTypeMapping TypeName="LOJAModel.ITEM_VENDA">
+        <MappingFragment StoreEntitySet="ITEM_VENDA">
+          <ScalarProperty Name="IDT_VENDA" ColumnName="IDT_VENDA" />
+          <ScalarProperty Name="IDT_PRODUTO" ColumnName="IDT_PRODUTO" />
+          <ScalarProperty Name="QUANTIDADE" ColumnName="QUANTIDADE" />
+          <ScalarProperty Name="VALOR_UNITARIO" ColumnName="VALOR_UNITARIO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PRODUTO">
+      <EntityTypeMapping TypeName="LOJAModel.PRODUTO">
+        <MappingFragment StoreEntitySet="PRODUTO">
+          <ScalarProperty Name="IDT_PRODUTO" ColumnName="IDT_PRODUTO" />
+          <ScalarProperty Name="IDT_CATEGORIA" ColumnName="IDT_CATEGORIA" />
+          <ScalarProperty Name="IDT_FABRICANTE" ColumnName="IDT_FABRICANTE" />
+          <ScalarProperty Name="NOME" ColumnName="NOME" />
+          <ScalarProperty Name="DESCRICAO" ColumnName="DESCRICAO" />
+          <ScalarProperty Name="VALOR" ColumnName="VALOR" />
+          <ScalarProperty Name="DATA_CADASTRO" ColumnName="DATA_CADASTRO" />
+          <ScalarProperty Name="FOTO" ColumnName="FOTO" />
+          <ScalarProperty Name="DESTAQUE" ColumnName="DESTAQUE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="LOJAModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TIPO_VENDA">
+      <EntityTypeMapping TypeName="LOJAModel.TIPO_VENDA">
+        <MappingFragment StoreEntitySet="TIPO_VENDA">
+          <ScalarProperty Name="IDT_TIPO_VENDA" ColumnName="IDT_TIPO_VENDA" />
+          <ScalarProperty Name="DESCRICAO" ColumnName="DESCRICAO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VENDA">
+      <EntityTypeMapping TypeName="LOJAModel.VENDA">
+        <MappingFragment StoreEntitySet="VENDA">
+          <ScalarProperty Name="IDT_VENDA" ColumnName="IDT_VENDA" />
+          <ScalarProperty Name="IDT_CLIENTE" ColumnName="IDT_CLIENTE" />
+          <ScalarProperty Name="IDT_TIPO_VENDA" ColumnName="IDT_TIPO_VENDA" />
+          <ScalarProperty Name="DATA_CADASTRO" ColumnName="DATA_CADASTRO" />
+          <ScalarProperty Name="VALOR_TOTAL" ColumnName="VALOR_TOTAL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
